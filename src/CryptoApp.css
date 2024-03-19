@@ -1,0 +1,49 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #040101;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .coin-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .coin-card {
+    background-color: #dc125c; /* Green */
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .coin-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff; /* White text */
+  }
+  
+  .coin-symbol {
+    color: #fff; /* White text */
+    font-size: 14px;
+  }
+  
+  @media (max-width: 600px) {
+    .coin-list {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+  
